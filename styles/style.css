@@ -32,7 +32,7 @@ header .menu ul li .link {
 header .menu ul li .link:hover {
   size: 20px;
   background: #728e8a;
-  border: 6px solid #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .img-header {
@@ -77,9 +77,9 @@ main .contenedor-card {
   align-items: center;
 }
 main .contenedor-card .card {
-  width: 450px;
-  height: 630px;
-  border: 1px solid #e7e9ec;
+  width: 350px;
+  height: 510px;
+  border: 0.5px solid #e7e9ec;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -96,28 +96,11 @@ main .contenedor-card .card h2 {
   color: #ffcb05;
 }
 main .contenedor-card .card p {
-  max-height: 144px;
-  height: 100%;
   color: #ffcb05;
   padding-left: 15px;
   padding-right: 15px;
 }
-main .contenedor-card .card a {
-  margin-top: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background: #ff1fee;
-  border-radius: 10px;
-  text-decoration: none;
-  color: #ffcb05;
-}
 
-main .contenedor-card .card a:hover {
-  background: red;
-  transition: 1s;
-}
 .contenedor-imagenes {
 }
 .contenedor-imagenes h1 {
@@ -131,8 +114,27 @@ main .contenedor-card .card a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  margin-top: 40px;
 }
-
+.contenedor-imagen img {
+  width: 400px;
+}
+.contenedor-descripcion {
+  background: green;
+  max-height: 900px;
+}
+.contenedor-descripcion h1 {
+  text-align: center;
+}
+.container {
+  display: flex;
+}
+.container .card-p {
+}
+.container .card .contenedor-video {
+}
+.contenedor-video h1 {
+}
 footer {
   display: flex;
   flex-direction: row;
