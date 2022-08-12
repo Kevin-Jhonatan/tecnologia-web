@@ -47,7 +47,6 @@ header .menu ul li .link:hover {
 main {
   max-width: 1440px;
   width: 90%;
-  height: 300px;
   margin: auto;
   padding-left: 30px;
   padding-right: 30px;
@@ -79,12 +78,11 @@ main .contenedor-card {
 }
 main .contenedor-card .card {
   width: 450px;
-  height: 600px;
+  height: 630px;
   border: 1px solid #e7e9ec;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   box-shadow: 0px 0px 5px 1px #e7e9ec;
 }
 
@@ -98,7 +96,108 @@ main .contenedor-card .card h2 {
   color: #ffcb05;
 }
 main .contenedor-card .card p {
+  max-height: 144px;
+  height: 100%;
   color: #ffcb05;
   padding-left: 15px;
   padding-right: 15px;
+}
+main .contenedor-card .card a {
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #ff1fee;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffcb05;
+}
+
+main .contenedor-card .card a:hover {
+  background: red;
+  transition: 1s;
+}
+.contenedor-imagenes {
+}
+.contenedor-imagenes h1 {
+  size: 32px;
+  text-align: center;
+  color: #ffcb05;
+}
+.contenedor-imagen {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.coso {
+  width: 100%;
+  font-size: 30px;
+  color: #fff;
+}
+.foo1 {
+  background: rgb(87, 81, 81);
+  width: 35%;
+  padding: 30px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.foo2 {
+  background: rgb(87, 81, 81);
+  width: 35%;
+  padding: 30px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.foo3 {
+  background: rgb(87, 81, 81);
+  width: 30%;
+  padding: 30px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.foo4 {
+  background: rgb(87, 81, 81);
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+  padding: 5px 0;
+  font-size: 23px;
+  transition: 0.5s;
+}
+footer a:hover {
+  letter-spacing: 0.25em;
+  color: rgb(235, 248, 48);
+}
+
+.icono {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 5px 0;
+  font-size: 28px;
+  transition: 0.5s;
+}
+.icono:hover {
+  color: rgb(239, 241, 86);
+  transition: all ease 0.3s;
+  transform: scale(1.1) translateY(-5px);
+}
+.autor {
+  font-size: 20px;
+  padding: 17px 0;
 }
