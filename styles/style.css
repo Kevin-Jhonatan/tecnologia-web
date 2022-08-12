@@ -57,11 +57,6 @@ main .parrafo {
   padding-left: 20px;
   padding-right: 20px;
 }
-main .parrafo > h1 {
-  text-align: center;
-  size: 32px;
-  color: #ffcb05;
-}
 main .parrafo p {
   color: #ffcb05;
 }
@@ -117,23 +112,55 @@ main .contenedor-card .card p {
   margin-top: 40px;
 }
 .contenedor-imagen img {
-  width: 400px;
+  width: 300px;
 }
 .contenedor-descripcion {
-  background: green;
   max-height: 900px;
 }
-.contenedor-descripcion h1 {
+.titulo-principal {
   text-align: center;
+  color: #ffcb05;
 }
 .container {
+  width: 100%;
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.container .card-p {
+.card-p {
+  width: 350px;
+  height: 600px;
+  border: 0.5px solid #e7e9ec;
+  box-shadow: 0px 0px 5px 1px #e7e9ec;
+  padding-left: 8px;
+  padding-right: 8px;
 }
-.container .card .contenedor-video {
+.card-p img {
+  height: 250px;
+  display: block;
+  margin: auto;
 }
-.contenedor-video h1 {
+.title {
+  text-align: center;
+  color: #ffcb05;
+}
+.card-p p {
+  color: #ffcb05;
+}
+.container-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.boton {
+  background: blue;
+}
+.contenedor-video {
+  width: 100%;
+}
+.video {
+  width: 100%;
+  margin: auto;
 }
 footer {
   display: flex;
