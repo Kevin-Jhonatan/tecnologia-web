@@ -1,7 +1,17 @@
-* {
-  background: #2c2b2b;
+body {
+  background: #2b2d32;
+  margin: 0;
+  padding: 0;
 }
-header nav ul {
+/* A2AD11  verde
+ griss-claro => E7E9EC
+ color opcional => 728E8A
+*/
+header {
+  position: relative;
+  width: 100%;
+}
+header .menu ul {
   display: flex;
   max-width: 1440px;
   width: 80%;
@@ -13,16 +23,82 @@ header nav ul {
   padding: 0;
   margin: auto;
 }
-header nav ul li {
-}
-header nav ul li .link {
+header .menu ul li .link {
   padding: 15px;
   text-decoration: none;
-  color: #ffffff;
+  color: #ffcb05;
   size: 16px;
 }
-header nav ul li .link:hover {
+header .menu ul li .link:hover {
   size: 20px;
-  background: #6b6868;
-  border: 2px solid #ffffff;
+  background: #728e8a;
+  border: 6px solid #ffffff;
+}
+
+.img-header {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background: url("https://media.redadn.es/imagenes/dswii_90124.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+main {
+  max-width: 1440px;
+  width: 90%;
+  height: 300px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+main .parrafo {
+  height: 300px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+main .parrafo > h1 {
+  text-align: center;
+  size: 32px;
+  color: #ffcb05;
+}
+main .parrafo p {
+  color: #ffcb05;
+}
+main .contenedor-card {
+  height: 700px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+main .contenedor-card .card {
+  width: 450px;
+  height: 600px;
+  border: 1px solid #e7e9ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px 1px #e7e9ec;
+}
+
+main .contenedor-card .card img {
+  width: 100%;
+  height: 250px;
+}
+main .contenedor-card .card h2 {
+  text-align: center;
+  size: 24px;
+  color: #ffcb05;
+}
+main .contenedor-card .card p {
+  color: #ffcb05;
+  padding-left: 15px;
+  padding-right: 15px;
 }
