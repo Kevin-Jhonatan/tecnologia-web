@@ -7,7 +7,7 @@ body {
  griss-claro => E7E9EC
  color opcional => 728E8A
 */
-header {
+/*header {
   position: relative;
   width: 100%;
 }
@@ -20,7 +20,7 @@ header .menu ul {
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  padding: 0;
+  padding: 60;
   margin: auto;
 }
 header .menu ul li .link {
@@ -43,13 +43,14 @@ header .menu ul li .link:hover {
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-}
+}*/
+
 main {
   max-width: 1440px;
   width: 90%;
   margin: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 main .parrafo {
   height: 300px;
@@ -61,7 +62,7 @@ main .parrafo p {
   color: #ffcb05;
 }
 main .contenedor-card {
-  height: 700px;
+  height: 900px;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -70,15 +71,29 @@ main .contenedor-card {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  object-fit: cover;
 }
 main .contenedor-card .card {
   width: 350px;
   height: 510px;
+  width: 30%;
   border: 0.5px solid #e7e9ec;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-shadow: 0px 0px 5px 1px #e7e9ec;
+}
+main .contenedor-card .card .audio1 {
+  width: 85%;
+  background-color: rgb(231, 180, 10);
+}
+main .contenedor-card .card .audio2 {
+  width: 85%;
+  background-color: rgb(231, 180, 10);
+}
+main .contenedor-card .card .audio3 {
+  width: 85%;
+  background-color: rgb(231, 180, 10);
 }
 
 main .contenedor-card .card img {
@@ -301,4 +316,181 @@ footer a:hover {
 .autor {
   font-size: 20px;
   padding: 17px 0;
+}
+
+/*-------------------------------------------------------------------*/
+#header {
+  position: relative;
+  width: 100%;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgb(255, 196, 0);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+.menu.logo-box {
+  margin-left: 20px;
+}
+.menu .logo-box h1 a {
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: 400;
+  color: white;
+  font-family: cursive;
+}
+.menu .list-container {
+  margin-right: 20px;
+}
+.menu .list-container ul {
+  display: flex;
+}
+.menu .list-container ul li {
+  list-style: none;
+}
+.menu .list-container ul li a {
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 8px;
+  color: var(--black);
+  border-radius: 24px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+.menu .list-container ul li a.activo {
+  background-color: rgba(177, 100, 13, 0.767);
+  color: #fff;
+}
+
+.menu .list-container ul li a:hover {
+  background-color: rgb(155, 105, 30);
+  color: #fff;
+}
+
+.btn-menu > .fa-bars {
+  display: none;
+}
+
+.img-header {
+  position: relative;
+  width: 100%;
+  height: 93vh;
+  background: url("https://cutewallpaper.org/21/pokemon-gif-wallpaper/Purple-Eared-Pikachu-Animation-by-moxie2D-Pikachu-art-.gif");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+body .abc ul {
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  max-height: 150px;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  border: 2px solid #1f1e1e;
+}
+body .abc ul li .link {
+  padding: 15px;
+  text-decoration: none;
+  color: #c97b07;
+  size: 16px;
+}
+body .abc ul li .link:hover {
+  size: 20px;
+  background: #ffaf04;
+  border: 2px solid #ffffff;
+}
+
+@media only screen and (max-width: 680px) {
+  .menu ul li {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 28px;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  main .contenedor-card {
+    top: 20px;
+    width: 100%;
+    margin: 7px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .btn-menu > .fa-bars {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 28px;
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .btn-menu > .fa-bars:hover {
+    color: rgb(218, 165, 67);
+  }
+
+  .btn-menu > .fa-times {
+    color: rgb(235, 187, 54);
+  }
+  .menu .list-container {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    background: #ffff;
+    width: 100%;
+    height: calc(100vh - 60px);
+  }
+  .menu .list-container .list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 4px solid rgb(196, 156, 28);
+  }
+  .menu .list-container .list li {
+    width: 90%;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+  }
+  .menu .list-container .list li a {
+    font-size: 20px;
+    text-align: center;
+    padding: 12px 0px;
+  }
+  .menu .list-container .list li a.activo {
+    background: none;
+    color: rgb(252, 215, 8);
+  }
+  .menu .list-container .list li a:hover {
+    background: none;
+    color: rgb(185, 122, 5);
+  }
 }

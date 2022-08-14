@@ -18,27 +18,39 @@
 </head>
 
 <body>
-  <!-- Encabezado -->
-  <header>
-    <!-- Link de navegacion -->
+  <header id="header">
     <nav class="menu">
-      <!-- Lista desordenada -->
-      <ul>
-        <!-- Elementos de lista -->
-        <li>
-          <!-- Hipervinculo de menu -->
+      <!-- Encabezado -->
+      <div class="logo-box">
+        <h1>
           <a href="index.html">
-            <!-- Define una imagen -->
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png"
               alt="Image" width="100">
           </a>
-        </li>
-        <li><a href="index.html" class="link">Inicio</a> </li>
-        <li><a href="#his" class="link">Acerca de Pokemons</a> </li>
-        <li><a href="#contac" class="link">Contáctanos</a> </li>
-        <li><a href="#" class="link">Comunidad</a> </li>
-      </ul><br>
+        </h1>
+        <span class="btn-menu"><i class="fas fa-bars"></i></span>
+      </div>
+
+      <div class="list-container">
+
+        <ul class="list">
+          <li><a href="#" class="activo">inicio</a></li>
+          <li><a href="#">servicio</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">contactanos</a></li>
+          <li><a href="#">nosotros</a></li>
+        </ul>
+
+      </div>
+      <br>
+    </nav>
+    <!-- Banner imagen parallax -->
+    <div class="img-header">
+
+    </div>
+
+    <div class="abc">
       <ul>
         <li><a href="#c" class="link">A</a></li>
         <li><a href="#c" class="link">B</a></li>
@@ -68,12 +80,52 @@
         <li><a href="index.html" class="link">Y</a></li>
         <li><a href="index.html" class="link">Z</a></li>
       </ul>
-    </nav>
-    <!-- Banner imagen parallax -->
-    <div class="img-header">
     </div>
 
+
+
+
+
+    <!-- <nav class="menu">
+      <div class="logo"> 
+      
+        <span class="btn-menu"><i class="fas fa-bars"></i></span>
+
+      </div>
+
+      <ul >
+
+        <li>
+
+
+          <a href="index.html">
+           
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png"
+              alt="Image" width="100">
+          </a>
+        </li>
+
+        
+
+        <li><a href="index.html" class="link">Inicio</a> </li>
+        <li><a href="#his" class="link">Acerca de Pokemons</a> </li>
+        <li><a href="#contac" class="link">Contáctanos</a> </li>
+        <li><a href="#" class="link">Comunidad</a> </li>
+
+       </ul>
+      
+        <br>
+        <br>
+      -->
+
+
+
+
+
+
   </header>
+
   <!-- Contenido principal -->
   <main>
     <div class="parrafo">
@@ -100,6 +152,7 @@
       </p>
       <!-- Div usado para los cards -->
     </div>
+
     <!-- Contenedor de todos los cards -->
     <div class="contenedor-card">
       <div class="card">
@@ -110,7 +163,7 @@
         <p>parrafo Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ratione officia, necessitatibus
           Comunidad
         </p>
-        <audio controls>
+        <audio controls class="audio1">
           <source src="segunda_actividad/audio/reason.mp3" type="audio/mpeg">
         </audio>
       </div>
@@ -123,7 +176,7 @@
 
         </p>
 
-        <audio controls class="audio">
+        <audio controls class="audio2">
           <source src="segunda_actividad/audio/reason.mp3" type="audio/mpeg">
         </audio>
       </div>
@@ -136,7 +189,7 @@
           necessitatibus
           cu
         </p>
-        <audio controls>
+        <audio controls class="audio3">
           <source src="segunda_actividad/audio/reason.mp3" type="audio/mpeg">
         </audio>
       </div>
@@ -271,6 +324,12 @@
 
     </div>
   </footer>
+
+  <script src="http:kit.fontawesome.com/35db202371.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+  <script src="script.js"></script>
 
 </body>
 
