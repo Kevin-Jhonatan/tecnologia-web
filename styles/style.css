@@ -34,7 +34,6 @@ header .menu ul li .link:hover {
   background: #728e8a;
   border: 2px solid #ffffff;
 }
-
 .img-header {
   position: relative;
   width: 100%;
@@ -44,6 +43,32 @@ header .menu ul li .link:hover {
   background-attachment: fixed;
   background-size: cover;
 }*/
+.caja{
+  width: 300px;
+  height: 300px;
+}
+.container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 60%;
+}
+@media only screen and (max-width: 1000px) {
+  .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+  .caja{
+      margin-bottom: 100%;
+  }
+}
+.logo-box img{
+  left: 30px;
+  top: 10px;
+  position: fixed;}
+
+
+
 
 main {
   max-width: 1440px;
@@ -58,8 +83,9 @@ main .parrafo {
   padding-left: 20px;
   padding-right: 20px;
 }
-main .parrafo p {
+main .parrafo ul {
   color: #ffcb05;
+  
 }
 main .contenedor-card {
   height: 900px;
@@ -96,7 +122,7 @@ main .contenedor-card .card .audio3 {
   background-color: rgb(231, 180, 10);
 }
 
-main .contenedor-card .card img {
+main .contenedor-card  img {
   width: 100%;
   height: 250px;
 }
@@ -111,8 +137,7 @@ main .contenedor-card .card p {
   padding-right: 15px;
 }
 
-.contenedor-imagenes {
-}
+
 .contenedor-imagenes h1 {
   size: 32px;
   text-align: center;
@@ -130,7 +155,7 @@ main .contenedor-card .card p {
   width: 300px;
 }
 .contenedor-descripcion {
-  max-height: 900px;
+  max-height: 800px;
 }
 .titulo-principal {
   text-align: center;
@@ -142,15 +167,16 @@ main .contenedor-card .card p {
   flex-direction: row;
   justify-content: space-around;
 }
-.card-p {
+.caja {
   width: 350px;
-  height: 600px;
+  /* height: 600px; */
+  height: 100%;
   border: 0.5px solid #e7e9ec;
   box-shadow: 0px 0px 5px 1px #e7e9ec;
   padding-left: 8px;
   padding-right: 8px;
 }
-.card-p img {
+.caja img {
   height: 180px;
   display: block;
   margin: auto;
@@ -159,7 +185,7 @@ main .contenedor-card .card p {
   text-align: center;
   color: #ffcb05;
 }
-.card-p p {
+.caja p {
   color: #ffcb05;
 }
 .container-btn {
@@ -257,18 +283,21 @@ footer {
 .coso {
   width: 100%;
   font-size: 30px;
-  color: #fff;
+  color: rgb(194, 190, 190);
+  font-family: 'Fredoka One', cursive;
+
 }
 .foo1 {
-  background: rgb(87, 81, 81);
+  background: #2b2d32;
   width: 35%;
   padding: 30px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
+
 }
 .foo2 {
-  background: rgb(87, 81, 81);
+  background: #2b2d32;
   width: 35%;
   padding: 30px 0;
   text-align: center;
@@ -276,7 +305,7 @@ footer {
   flex-direction: column;
 }
 .foo3 {
-  background: rgb(87, 81, 81);
+  background: #2b2d32;
   width: 30%;
   padding: 30px 0;
   text-align: center;
@@ -284,35 +313,53 @@ footer {
   flex-direction: column;
 }
 .foo4 {
-  background: rgb(87, 81, 81);
+  background: #2b2d32;
   width: 100%;
   padding: 30px 0;
   text-align: center;
 }
 footer a {
   text-decoration: none;
-  color: black;
+  color: rgb(194, 190, 190);
   padding: 5px 0;
   font-size: 23px;
   transition: 0.5s;
+  font-family: 'Fredoka One', cursive;
+
+  
 }
 footer a:hover {
   letter-spacing: 0.25em;
-  color: rgb(235, 248, 48);
+  color: #ffcb05;
+
+  color: #fff;
+  font-family: 'Pacifico', cursive;
+  text-shadow:
+    0 0 4px #fff,
+    0 0 11px #fff,
+    0 0 16px #fff,
+    0 0 30px #fefa13,
+    0 0 40px #fefa13,
+    0 0 60px #fefa13,
+    0 0 80px #fefa13,
+    0 0 90px #fefa13;
 }
 
 .icono {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(194, 190, 190);
   padding: 5px 0;
-  font-size: 28px;
+  font-size: 35px;
   transition: 0.5s;
 }
 .icono:hover {
-  color: rgb(239, 241, 86);
+  color: #ffd633;
   transition: all ease 0.3s;
   transform: scale(1.1) translateY(-5px);
+
 }
+
+
 .autor {
   font-size: 20px;
   padding: 17px 0;
@@ -401,7 +448,8 @@ body .abc ul {
   list-style: none;
   padding: 0;
   margin: auto;
-  border: 2px solid #1f1e1e;
+  /* border: 2px solid #1f1e1e; */
+  
 }
 body .abc ul li .link {
   padding: 15px;
@@ -450,6 +498,7 @@ body .abc ul li .link:hover {
     transition: 0.5s;
     cursor: pointer;
   }
+
   .btn-menu > .fa-bars:hover {
     color: rgb(218, 165, 67);
   }
